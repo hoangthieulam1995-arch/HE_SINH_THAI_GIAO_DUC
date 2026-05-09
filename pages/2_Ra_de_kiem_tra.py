@@ -4,7 +4,7 @@ import google.generativeai as genai
 import markdown
 
 # ==========================================
-API_KEY = "AIzaSyBEPxyy7JbLF_l7-xIyMlNt6nYZvrKyxQU"
+API_KEY = st.secrets["MY_API_KEY"]
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-2.5-flash')
 # ==========================================
